@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.btn{
+    letter-spacing: 3px;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    background-color: #E6E6FA;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif; 
+    .container{
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 2px 2px 12px  rgba(211, 211, 211,0.8);
+        width: 100%;
+        max-width: 600px;
+        padding: 0 2rem;
+        .notice,h2{
+            letter-spacing: 3px;
+            width: 90%;
+            text-align: center;
+            margin: 1rem auto;
+        }
+        .notice{
+            text-transform: capitalize;
+            font-size: 0.8rem;
+            visibility: hidden;
+            background-color: #FFE4C4;
+            line-height: 1.2rem;
+            border-radius: 5px;
+        }
+        h2{
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+        .tool_bar{
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto auto auto;
+            input, button{
+                border: none;
+            }
+            #add_item_bar{
+                grid-column-start: 1;
+                grid-column-end: 8;
+                background-color: rgb(240, 248, 255);
+                font-size: 1rem;
+                padding: 5px 5px 5px 20px;
+                letter-spacing: 2px;
+                border-radius: 5px;
+            }
+            .submit_btn,.edit_btn{
+                background-color: rgba(100, 149, 237,0.5);
+                border-radius: 0 5px 5px 0;
+            }
+            .edit_btn{
+                display: none;
+            }
+            
+        }
+        .items{
+            width: 100%;
+            margin-top: 2rem;
+            .item{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 1rem;
+                padding: 5px 5px 5px 20px;
+                border-radius: 5px;
+                
+                .icon{
+                    i{
+                        font-size: 0.7rem;
+                        cursor: pointer;
+                        padding: 0 5px;
+                    }
+                    .edit{
+                        color: #7FFFD4;
+                    }
+                    .delete{
+                        color: #A52A2A;
+                    }
+                }
+                
+            }
+            .item:hover{
+                background-color: rgb(240, 248, 255);
+                transition: 0.5s ease-out;
+            }
+            
+        }
+        .clear_btn{
+            width: 100%;
+            margin: 0  auto;
+            margin-bottom: 1.5rem;
+            border: none;
+            background-color: transparent;
+            line-height: 1.5rem;
+            font-size: 0.8rem;
+            letter-spacing: 5px;
+            color: #B22222;
+        }
+    }
+}
+
+
